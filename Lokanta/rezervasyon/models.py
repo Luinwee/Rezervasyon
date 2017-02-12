@@ -18,6 +18,6 @@ class baglanti (models.Model) :
 
 class menu (models.Model) :
     yemekısmı = models.CharField(max_length=30)
-    yemekfıyatı = models.IntegerField
+    yemekfıyatı = models.IntegerField(blank = True, null = True)
     yemektanıtım = models.CharField(max_length=150)
-    yemekresmı = models.ImageField
+    yemekresmı = models.ImageField(blank = True, null = True)
